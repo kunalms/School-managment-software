@@ -1,0 +1,64 @@
+D:\Visual studio projects\WIS\WIS\bin\Debug\WIS.exe.config
+D:\Visual studio projects\WIS\WIS\bin\Debug\WIS.exe
+D:\Visual studio projects\WIS\WIS\bin\Debug\WIS.pdb
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.Properties.Resources.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.TemplateForm.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.csproj.GenerateResource.Cache
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.exe
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.pdb
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.LoginForm.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.AdminForm.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.AddStudent.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.LecturerForm.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.LecturerCourse.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.Course_info.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.ProfileLecturer.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.ManageGrades.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.AdminLecturer.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.AddLecturer.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.csprojResolveAssemblyReference.cache
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.ManageStudentAdmin.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.ManageEmployeeAdmin.resources
+D:\Visual studio projects\WIS\WIS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.Reports.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\RdlCompile.cache
+D:\Visual studio projects\WIS\WIS\obj\Debug\RdlCompile.compiled
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.StudentForm.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.UpdateMarks.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.ProfileStudent.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.ViewCourseStudent.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.Managefavourite.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.Viewgradestudent.resources
+D:\Visual studio projects\WIS\WIS\obj\Debug\WIS.Fee.resources
+D:\WIS\WIS\bin\Debug\WIS.exe.config
+D:\WIS\WIS\obj\Debug\WIS.exe
+D:\WIS\WIS\obj\Debug\WIS.pdb
+D:\WIS\WIS\bin\Debug\WIS.exe
+D:\WIS\WIS\bin\Debug\WIS.pdb
+D:\WIS\WIS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\WIS\WIS\obj\Debug\WIS.csprojResolveAssemblyReference.cache
+D:\WIS\WIS\obj\Debug\WIS.AddLecturer.resources
+D:\WIS\WIS\obj\Debug\WIS.AddStudent.resources
+D:\WIS\WIS\obj\Debug\WIS.AdminForm.resources
+D:\WIS\WIS\obj\Debug\WIS.AdminLecturer.resources
+D:\WIS\WIS\obj\Debug\WIS.Course_info.resources
+D:\WIS\WIS\obj\Debug\WIS.Fee.resources
+D:\WIS\WIS\obj\Debug\WIS.LecturerCourse.resources
+D:\WIS\WIS\obj\Debug\WIS.LecturerForm.resources
+D:\WIS\WIS\obj\Debug\WIS.LoginForm.resources
+D:\WIS\WIS\obj\Debug\WIS.ManageEmployeeAdmin.resources
+D:\WIS\WIS\obj\Debug\WIS.Managefavourite.resources
+D:\WIS\WIS\obj\Debug\WIS.ManageGrades.resources
+D:\WIS\WIS\obj\Debug\WIS.ManageStudentAdmin.resources
+D:\WIS\WIS\obj\Debug\WIS.ProfileLecturer.resources
+D:\WIS\WIS\obj\Debug\WIS.ProfileStudent.resources
+D:\WIS\WIS\obj\Debug\WIS.Properties.Resources.resources
+D:\WIS\WIS\obj\Debug\WIS.Reports.resources
+D:\WIS\WIS\obj\Debug\WIS.StudentForm.resources
+D:\WIS\WIS\obj\Debug\WIS.TemplateForm.resources
+D:\WIS\WIS\obj\Debug\WIS.UpdateMarks.resources
+D:\WIS\WIS\obj\Debug\WIS.ViewCourseStudent.resources
+D:\WIS\WIS\obj\Debug\WIS.Viewgradestudent.resources
+D:\WIS\WIS\obj\Debug\WIS.csproj.GenerateResource.Cache
+D:\WIS\WIS\obj\Debug\RdlCompile.cache
+D:\WIS\WIS\obj\Debug\RdlCompile.compiled

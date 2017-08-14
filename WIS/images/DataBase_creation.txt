@@ -1,0 +1,158 @@
+USE [WIS]
+GO
+
+/****** Object:  Table [dbo].[Program]    Script Date: 23-07-2017 02:33:54 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Program](
+	[Program_id] [int] IDENTITY(1,1) NOT NULL,
+	[Program_name] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_Program] PRIMARY KEY CLUSTERED 
+(
+	[Program_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+
+
+USE [WIS]
+GO
+
+/****** Object:  Table [dbo].[Course]    Script Date: 23-07-2017 02:34:14 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Course](
+	[Course_id] [int] IDENTITY(1,1) NOT NULL,
+	[Couse_name] [nvarchar](50) NOT NULL,
+	[Credits] [int] NOT NULL,
+	[Fee] [int] NOT NULL,
+	[Prerequsite] [ntext] NULL,
+	[Program_id] [int] NOT NULL,
+ CONSTRAINT [PK_Course] PRIMARY KEY CLUSTERED 
+(
+	[Course_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[Course]  WITH CHECK ADD  CONSTRAINT [FK_Course_Program] FOREIGN KEY([Program_id])
+REFERENCES [dbo].[Program] ([Program_id])
+GO
+
+ALTER TABLE [dbo].[Course] CHECK CONSTRAINT [FK_Course_Program]
+GO
+
+
+
+
+USE [WIS]
+GO
+
+/****** Object:  Table [dbo].[Lecturer]    Script Date: 23-07-2017 02:34:27 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Lecturer](
+	[Lecturer_id] [int] IDENTITY(1,1) NOT NULL,
+	[Lecturer_name] [nchar](50) NOT NULL,
+	[Lecturer_role] [nchar](50) NOT NULL,
+	[Lecturer_function] [int] NOT NULL,
+	[Lecturer_enable] [int] NOT NULL,
+	[Lecturer_Address] [text] NULL,
+	[Lecture_number] [int] NOT NULL,
+	[Lecturer_username] [nchar](10) NOT NULL,
+	[Lecturer_password] [nchar](10) NOT NULL,
+ CONSTRAINT [PK_Lecturer] PRIMARY KEY CLUSTERED 
+(
+	[Lecturer_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+
+
+
+USE [WIS]
+GO
+
+/****** Object:  Table [dbo].[Student]    Script Date: 23-07-2017 02:34:41 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Student](
+	[Student_id] [int] IDENTITY(1,1) NOT NULL,
+	[Student_name] [text] NULL,
+	[Student_father] [nchar](50) NULL,
+	[Student_mother] [nchar](50) NULL,
+	[Student_username] [nchar](50) NOT NULL,
+	[Student_password] [nchar](10) NOT NULL,
+	[Student_past_course] [nchar](50) NULL,
+	[Student_contact] [int] NOT NULL,
+	[Student_email] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Student] PRIMARY KEY CLUSTERED 
+(
+	[Student_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+
+
+
+USE [WIS]
+GO
+
+/****** Object:  Table [dbo].[Student_course]    Script Date: 23-07-2017 02:35:02 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Student_course](
+	[Student_id] [int] NOT NULL,
+	[Course_id] [int] NOT NULL,
+	[Marks_1] [int] NOT NULL,
+	[Marks_2] [int] NOT NULL,
+	[Marks_3] [int] NOT NULL,
+	[Grade] [nchar](10) NOT NULL
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[Student_course]  WITH CHECK ADD  CONSTRAINT [FK_Student_course_Course] FOREIGN KEY([Student_id])
+REFERENCES [dbo].[Program] ([Program_id])
+GO
+
+ALTER TABLE [dbo].[Student_course] CHECK CONSTRAINT [FK_Student_course_Course]
+GO
+
+ALTER TABLE [dbo].[Student_course]  WITH CHECK ADD  CONSTRAINT [FK_Student_course_Student] FOREIGN KEY([Student_id])
+REFERENCES [dbo].[Student] ([Student_id])
+GO
+
+ALTER TABLE [dbo].[Student_course] CHECK CONSTRAINT [FK_Student_course_Student]
+GO
+
+
